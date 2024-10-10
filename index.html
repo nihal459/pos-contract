@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS and Inventory System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f7fc;
+            font-family: 'Arial', sans-serif;
+        }
+        h1, h2, h3, h4 {
+            font-weight: bold;
+        }
+        .header-section {
+            background-color: #007bff;
+            color: white;
+            padding: 50px 0;
+            border-radius: 8px;
+        }
+        .header-section h1 {
+            font-size: 3rem;
+        }
+        .feature-icon {
+            font-size: 2rem;
+            color: #007bff;
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+        .section-title {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        .custom-section {
+            margin-bottom: 40px;
+        }
+        .conclusion-section {
+            background-color: #007bff;
+            color: white;
+            padding: 40px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid header-section text-center">
+    <h1>Point of Sale (POS) and Inventory System</h1>
+    <p class="lead">A Comprehensive Tool to Streamline Business Operations</p>
+</div>
+
+<div class="container mt-5">
+
+    <!-- Introduction Section -->
+    <div class="custom-section text-center">
+        <h2 class="section-title">1. Introduction</h2>
+        <p class="lead">Bilberry Foods, a distribution company based in Doha, Qatar, utilizes a comprehensive Point of Sale (POS) and Inventory System designed to streamline the day-to-day operations of its retail business. This system automates key processes such as inventory management, sales tracking, purchase orders, expense monitoring, and sales team management. By centralizing these tasks, the POS and Inventory System enhances operational efficiency, ensuring smooth business operations and real-time insights that enable better decision-making for the food industry.</p>
+    </div>
+
+    <!-- Features and Functionalities -->
+    <div class="custom-section">
+        <h2 class="section-title text-center">2. Features and Functionalities</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header text-center">
+                        <i class="fas fa-file-invoice feature-icon"></i> Invoice Management
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Create Invoices with customer details and product listings.</li>
+                            <li>Apply discounts accordingly.</li>
+                            <li>Print invoices to customers(Shops).</li>
+                            <li>Track invoice statuses (paid, unpaid, partially paid).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header text-center">
+                        <i class="fas fa-boxes feature-icon"></i> Product and Category Management
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Add/edit products with details like SKU, price, and category.</li>
+                            <li>Track stock levels with low-stock alerts.</li>
+                            <li>Manage categories and assign products accordingly.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header text-center">
+                        <i class="fas fa-truck feature-icon"></i> Purchase Management
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Create and manage purchase orders for restocking.</li>
+                            <li>Store supplier details and track orders.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header text-center">
+                        <i class="fas fa-chart-line feature-icon"></i> Detailed Reporting
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Analyze performance with sales, inventory, and financial reports.</li>
+                            <li>Create custom reports based on business requirements.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+ 
+        </div>
+
+        <div class="row">
+
+
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header text-center">
+                        <i class="fas fa-credit-card feature-icon"></i> Credit and Partial Sales
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Record sales on credit and track payments.</li>
+                            <li>Accept partial payments and update invoice statuses.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header text-center">
+                        <i class="fas fa-store-alt feature-icon"></i> Shop Management
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Manage multiple shops with independent inventories.</li>
+                            <li>Configure shop settings, working hours, and offers.</li>
+                            <li>Shop Overview: Dashboard for sales, stock levels, and employee performance per shop</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header text-center">
+                        <i class="fas fa-coins feature-icon"></i> Expense Tracker
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Track expenses by category and manage recurring expenses.</li>
+                            <li>Generate detailed monthly and yearly reports.</li>
+                            <li>Staff Salary: Generate salary reports based on working hours, leaves, and performance</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header text-center">
+                        <i class="fas fa-users feature-icon"></i> Salesman Management
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Set and monitor individual salesmen.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header text-center">
+                        <i class="fas fa-users feature-icon"></i>  Bulk Product Upload
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>CSV Upload: Upload bulk products through CSV or Excel files.</li>
+                            <li>Error Handling: Validate CSV files before upload and provide error reports for corrections.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header text-center">
+                        <i class="fas fa-users feature-icon"></i>  Analytics and Insights
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Sales Insights: Generate predictive sales reports and identify trends.</li>
+                            <li>Customer Analytics: Track customer preferences, purchase behavior, and frequency.</li>
+                            <li>Product Performance: Analyze product-wise performance to optimize inventory and pricing</li>
+                            <li>Branch Performance: Compare performance across multiple shop locations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+        <div class="row">
+
+
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header text-center">
+                        <i class="fas fa-users feature-icon"></i>  Database Backup
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>The admin has to backup the database regularly and store it in google drive or their
+personal servers so that if in case the application or pc crashes, the datas and application
+can be restarted again
+.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header text-center">
+                        <i class="fas fa-users feature-icon"></i>  Vehicle Management
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Manage vehicles that the company has so that it can be assigned to salesmen during an invoice/order generation</li>
+                     
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Additional Features Section -->
+    <div class="custom-section">
+        <h2 class="section-title text-center">3. Pricing</h2>
+        <div class="row m-5">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header text-center">
+                        Development
+                    </div>
+                    <div class="card-body">
+                        <p class="text-center">2500 QAR</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header text-center">
+                        Testing
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <p class="text-center">500 QAR</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header text-center">
+                        Setup
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <p class="text-center">500 QAR</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+        <div class="conclusion-section text-center mt-5">
+        <h2>Total Cost</h2>
+        <p class="lead text-center">3500 QAR</p>
+    </div>
+
+
+    <div class="custom-section text-center">
+        <h2 class="section-title">4. Agreement</h2>
+        <p class="lead">This Agreement is made on ___________________, by and between:.</p>
+        <p><strong>Developer:</strong> Nihal. A</p>
+        <p><strong>Email:</strong> nihal.techworks@gmail.com</p>
+        <p><strong>Phone Number:</strong> Nihal: +91 8129033535</p>
+        <p><strong>Address:</strong> Nihal: Kochi, Kerala, India (683517)</p>
+        <p><strong><b>AND</b></strong></p>
+        <p><strong>Client Company:</strong> Bilberry Foods</p>
+        <p><strong>Client Name:</strong> Abdul Saleem</p>
+        <p><strong>Client Email:</strong> bilberryfood@gmail.com</p>
+        <p><strong>Phone Numbers:</strong> +974 7080 4301, +974 7080 4302, +91 9846899542</p>
+        <p><strong>Address:</strong> CR No: 140044, Doha - Qatar<br>Birkat Al Awamer, GWC Al Wukair, Logistics Park</p>
+    </div>
+
+    <div class="custom-section text-center">
+        <h2 class="section-title">5. Terms & Conditions</h2>
+        <div class="text-left m-5">
+            <h3>5.1 Payment Terms</h3>
+            <li>Initial Payment: 50% of the total project cost is to be paid on the day of signing of agreement to start the project</li>
+            <li>Remaining Payment: 50% of remaining amount is to be paid after 5 days of working in demo project</li>
+            <li>AMC: Nil</li>
+            <li>Updates: If the client requests new features or major updates, an additional fee will be charged
+                as per the scope of work.
+                </li>
+        </div>
+
+        <div class="text-left m-5">
+            <h3>5.2 Timeline</h3>
+            <li>Demo: Within 14 days</li>
+            <li>Setup: 1 day</li>
+            <li>Customization: If there is any changes after demo, then extra time will be according to the scope of work. It will be mutually agreed upon by the developer and client</li>
+        </div>
+
+        <div class="text-left m-5">
+            <h3>5.3 Updations</h3>
+            <li>Updates: If the client requests new features or major updates, an additional fee will be charged
+                as per the scope of work.
+                </li>
+            <li>Updates and corrections will be handled through online meetings.
+            </li>
+            <li>Any errors or issues arising from these updates or existing features will be corrected
+                free of charge.</li>
+        </div>
+
+        <div class="text-left m-5">
+            <h3>5.4 Support</h3>
+            <li>User manuals will be provided on the delivery of project
+                </li>
+            <li>Updates and corrections will be handled through online meetings.
+            </li>
+            <li>Any errors or issues arising from these updates or existing features will be corrected
+                free of charge.</li>
+            <li>After the delivery of project, if the client requires any updations or support, they can message the developers and online meetings can be arranged</li>
+            <li>There is no AMC and this project is one time payment software with offline mode facility</li>
+
+        </div>
+
+    </div>
+
+    <div class="section agreement m-5">
+        <h2>Signatures</h2>
+        <div style="float:left; width: 50%;">
+            <h3><strong>Developer</strong></h3>
+     
+            <p><strong>Nihal: </strong></p>
+        </div>
+    
+        <div style="float:right; text-align:right; width: 50%;">
+            <h3><strong>Client</strong></h3>
+            <p><strong>Client Name: Bilberry Foods</strong></p>
+            <br>
+            <p></p>
+        </div>
+    
+        <div style="clear:both;"></div>
+        <br><br><br>
+    </div>
+
+
+    <!-- Conclusion Section -->
+
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
